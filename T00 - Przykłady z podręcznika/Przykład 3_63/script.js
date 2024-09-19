@@ -1,5 +1,7 @@
 //3.63
-Tablica=new Array('Anna','Adam','Piotr');
-document.write(Tablica.join()+"<br>");
+// var Tablica= new Array('Anna','Adam','Piotr');
+let Tablica = ['Anna','Adam','Piotr']
+console.log(Tablica.join());
+console.table(Tablica);
 Tablica.reverse()
-document.write(Tablica.join()+"<br>");
+console.log(Tablica.join());
