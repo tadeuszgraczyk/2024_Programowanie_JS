@@ -16,6 +16,18 @@ console.log(age);
 // FirstName = PascalCase
 // firstname = lowercase
 
+
+// Słowa kluczowe, które nie można zastosować do nazw plików
+/*
+as const export get null target void
+async continue extends if of this while
+await debugger false import return throw with
+break default finally in set true yield
+case delete for instanceof static try
+catch do from let super typeof
+class else function new switch var
+*/
+
 // Możemy ponownie przypisać zmienne `let`. Jeśli zmienisz `age` na `const`, otrzymasz błąd
 age = 31;
 console.log(age);
