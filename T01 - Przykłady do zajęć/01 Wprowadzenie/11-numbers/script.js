@@ -2,29 +2,29 @@ let x;
 
 const num = new Number(5);
 
-// toString() - returns a string representation of the number
+// toString() - zwraca liczbę jako łańcuch znaków
 x = num.toString();
-// To get the length
+// Tak otrzymamy ilość znaków w tym łańcuchu
 x = num.toString().length;
 
-// toFixed() - returns a string representation of the number with a specified number of decimals
+// toFixed() - zwraca łańcuch reprezentujący liczbę z określoną ilością miejsc po przecinku
 x = num.toFixed(2);
 
-// toPrecision() - returns a number with the specified length
+// toPrecision() - zwraca liczbę o określonej długości
 x = num.toPrecision(3);
 
-// toExponential() -  convert a number to exponential notation and return its value as a string
+// toExponential() -  przekonwertować liczbę na notację wykładniczą i zwrócić jej wartość jako ciąg
 x = num.toExponential(2);
 
-// toLocaleString() - returns a string representation of the number, using the current locale
+// toLocaleString() - zwraca reprezentację ciągu liczbowego, używając bieżącej lokalizacji
 x = num.toLocaleString('en-US');
 
-// valueOf - Get value
+// valueOf - Uzyskaj wartość
 x = num.valueOf();
 
-// The Number object itself has some properties and methods
+// Obiekt Number sam w sobie ma pewne właściwości i metody
 
-// Largest and smallest possible number
+// Największa i najmniejsza możliwa liczba
 x = Number.MAX_VALUE;
 x = Number.MIN_VALUE;
 
