@@ -1,63 +1,63 @@
 let x;
 
-const name = 'John';
+const name = 'Janusz';
 const age = 31;
 
-// Concatenation
-x = 'Hello, my name is ' + name + ' and I am ' + age + ' years old';
+// Konkatenacja łańcuchów
+x = 'Cześć, mam na imię ' + name + ' i mam ' + age + ' lat';
 
 
 // Template Literals
-x = `Hello, my name is ${name} and I am ${age} years old`;
+x = `Cześć, mam na imię ${name} i mam ${age} lat`;
 
-// String Properties and Methods
+// String - właściwości i metody łańcuchów znaków
 
-// Creating a "string object" (JS does this automatically when using a propery or method on a primitive string)
+//Tworzenie „obiektu ciągu” - "string object" (JS wykonuje to automatycznie podczas używania właściwości lub metody w ciągu prymitywnym)
 const s = new String('Hello World');
 
 x = typeof s;
 
 x = s.length;
 
-// Access value by key
+// Dostęp do wartości według klucza
 x = s[0];
 
-// Shows the prototype of the string object. Shows the properties and methods
+// Pokazuje prototyp obiektu string. Pokazuje właściwości i metody
 x = s.__proto__;
 
-// Change case
+// Zmiana wielkości liter
 x = s.toUpperCase();
 
 x = s.toLowerCase();
 
-// charAt() - returns the character at the specified index
+// charAt() - zwraca znak o określonym indeksie
 x = s.charAt(0);
 
-// indexOf - returns the index of the first occurrence of a specified value in a string
+// indexOf - zwraca indeks pierwszego wystąpienia określonej wartości w ciągu
 x = s.indexOf('d');
 
-// substring() - search a string for a specified value
+// substring() - wyszukaj w ciągu określoną wartość
 x = s.substring(2, 7);
 
 x = s.substring(6);
 
-// slice() - extracts a part of a string and returns a new string
+// slice() - wyodrębnia część ciągu i zwraca nowy ciąg
 x = s.slice(-11, -6);
 
-// trim() - remove whitespace from beginning and end of string
+// trim() - usuń spację z początku i końca ciągu
 x = '         Hello World';
 x = x.trim();
 
-// replace() - replace all instances of a string
+// replace() - zamień wszystkie wystąpienia ciągu
 x = s.replace('World', 'John');
 
-// includes() - returns true if the string is found
+// includes() - zwraca wartość true, jeśli ciąg znaków zostanie znaleziony
 x = s.includes('Hell');
 
-// valueOf() - returns the primitive value of a variable
+// valueOf() - zwraca wartość prymitywną zmiennej
 x = s.valueOf();
 
-// split() - returns an array of strings
+// split() - zwraca tablicę ciągów znaków
 x = s.split('');
 
 console.log(x);
