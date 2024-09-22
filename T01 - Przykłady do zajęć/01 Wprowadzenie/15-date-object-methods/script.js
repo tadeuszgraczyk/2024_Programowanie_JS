@@ -1,7 +1,7 @@
 let x;
 let d = new Date();
 
-// Date methods
+// Metody daty
 
 x = d.toString();
 
@@ -27,7 +27,7 @@ x = d.getMilliseconds();
 
 x = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 
-// Intl.DateTimeFormat API (locale specific)
+// Intl.DateTimeFormat API (zależne od ustawień regionalnych)
 x = Intl.DateTimeFormat('en-US').format(d);
 x = Intl.DateTimeFormat('en-GB').format(d);
 x = Intl.DateTimeFormat('default').format(d);
