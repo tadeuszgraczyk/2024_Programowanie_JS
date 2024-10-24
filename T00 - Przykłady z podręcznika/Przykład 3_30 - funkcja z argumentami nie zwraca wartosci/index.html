@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <meta charset="UTF-8">
     <title>Funkcja wymaga argumentów lecz nie zwraca wartości</title>
     <script>
         //Przykład 3.30
         function trzy(x) {
             for (let i = 0; i <= x; i++) {
-                if ((i % 3) != 0)
+                if ((i % 3) !== 0)
                     continue;
                 document.write(i + "; ")
             }

@@ -1,2 +1,2 @@
 //Przykład 3.14
-var osoba = {nazwisko: "Nowak", imie: "Paweł", wiek: 18};
+let osoba = {nazwisko: "Nowak", imie: "Paweł", wiek: 18};

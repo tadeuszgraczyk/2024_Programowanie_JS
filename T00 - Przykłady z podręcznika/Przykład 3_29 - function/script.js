@@ -1,5 +1,5 @@
 //Przykład 3.29
 function suma(a, b) {
-    var c = a + b;
+    let c = a + b;
     return c;
 }
