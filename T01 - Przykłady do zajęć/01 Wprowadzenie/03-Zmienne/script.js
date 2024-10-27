@@ -29,8 +29,13 @@ class else function new switch var
 */
 
 // Możemy ponownie przypisać zmienne `let`. Jeśli zmienisz `age` na `const`, otrzymasz błąd
+let age = 2;
 age = 31;
 console.log(age);
+
+const age2 = 17;
+age2 = 18;
+console.log(age2);
 
 // Za pomocą let możemy zadeklarować wartość bez przypisywania wartości
 let score;
