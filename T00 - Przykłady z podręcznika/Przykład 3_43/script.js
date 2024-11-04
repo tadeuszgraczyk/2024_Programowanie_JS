@@ -1,6 +1,6 @@
 //Przykład 3_43
 
-var osoba = {
+let osoba = {
     nazwisko: "Nowacki",
     imie: "Marek",
     zawod: "informatyk",
@@ -8,3 +8,5 @@ var osoba = {
         document.write(this.nazwisko+ ' '+ this.imie);
     }
 }
+// wywołanie metody pokaz obiektu osoba
+osoba.pokaz();
