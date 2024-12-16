@@ -5,7 +5,7 @@ function Klient(nazwisko, imie) {
 }
 Klient.prototype.zawod = 'kierowca';
 Klient.prototype.pisz_dane = function() {
-    document.write(this.nazwisko_k + ' ' + this.imie_k);
+    console.log(this.nazwisko_k + ' ' + this.imie_k);
 }
-var osoba1 = new Klient("Malinowski", "Oskar", "kierowca");
+let osoba1 = new Klient("Malinowski", "Oskar", "kierowca");
 osoba1.pisz_dane();

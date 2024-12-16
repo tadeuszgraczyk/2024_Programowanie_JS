@@ -1,3 +1,5 @@
 // przyklad 3.50
-var tekst = "Obiekty języka JavaScript";
-var dlug = tekst.length;
+let  tekst = "Obiekty języka JavaScript";
+let dlug = tekst.length;
+
+console.log(dlug);
