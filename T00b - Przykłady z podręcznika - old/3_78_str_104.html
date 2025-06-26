@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #baner
+        {
+            width:300px;
+            height: 180px;
+        }
+    </style>
+   <!--NIE DZIAŁA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--> 
+    <script>
+    window.onload=Zmiana;
+    var Nr=0;
+    
+        function Zmiana()
+        {
+            var obrazy = new Array('z1.jpg','z2.jpg','z3.jpg','z4.jpg','z5.jpg','z6.jpg');
+            // obrazy dodane do tablicy
+            Nr++;
+            
+            if(Nr==obrazy.length)
+            {
+                Nr=0;
+            }
+            document.getElementById('baner').src=obrazy[Nr];
+            setTimeout(Zmiana,1000);
+            
+        }
+
+    </script>
+</head>
+<body>
+   <div>
+      <img src="z1.jpg" id="baner" alt="Reklama">
+   </div>
+</body>
+</html>

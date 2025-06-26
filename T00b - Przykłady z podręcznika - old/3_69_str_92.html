@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Przykład 3.69-->
+   <form id="form1" name="form1" action="mailto:nauka@gmail.com" method="post">
+       Podaj imię: <input type="text" name="imie">
+       <button onclick="Witaj()">Kliknij!!!</button>
+   </form>
+   
+   <script>
+   function Witaj() 
+       {
+           var imie=document.forms['form1'].imie.value;
+           alert('Co słychać '+imie+'?');
+       }
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- To jest komentarz-->
+<style type="text/css">
+#napis
+{
+	position: absolute;
+	background-color: #3ff;
+	width: 210px;
+    float:left;
+
+}
+</style>
+<!--Animowanie tekstu Przykład 3.75/100-->
+<script type="text/javascript">
+
+function Animacja()
+{
+	var blok=document.getElementById('napis');
+
+	if (parseInt(blok.style.left)<50)
+	{
+		blok.style.left = "250px";
+	}
+	else
+	{
+		blok.style.left = (parseInt(blok.style.left)-3)+"px";
+	}
+}
+	window.setInterval("Animacja()",100);
+
+</script>
+</head>
+
+<body>
+
+	<div id="napis" style="left: 300px;">JavaScript-język skryptowy </div>
+ 
+</body>
+</html>

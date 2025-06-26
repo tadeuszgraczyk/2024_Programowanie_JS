@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Co słychać?</title>
+  <!-- Przykład ze strony 92-->
+</head>
+
+<body>
+<form id="form1" name="form1" action="mailto:nauka@wp.pl" method="post" >
+	Podaj imię: <input type="tekst" name="liczba1"/>
+</form>
+<form id="form2" name="form2" action="mailto:nauka@wp.pl" method="post" >
+	Podaj imię: <input type="tekst" name="liczba2"/>
+
+</form>
+<button onclick="Witaj()">Kliknij!!!</button>
+<script type="text/javascript">
+	function Witaj()
+	{
+		var liczba1 = document.forms['form1'].liczba1.value;
+		var liczba2 = document.forms['form2'].liczba2.value;
+		liczba1=parseInt(liczba1);
+		liczba2=parseInt(liczba2);
+		alert(liczba1+liczba2);
+	}
+</script>
+</body>
+</html>

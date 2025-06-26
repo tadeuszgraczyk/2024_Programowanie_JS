@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zmiana koloru tła 3.31 str. 69</title>
+    <script type="text/javascript">
+       var kolor_t = new Function("document.bgColor='antiquewhite'")
+       document.form1.colorBottom.onclic = kolor_t
+    </script>
+</head>
+
+<body>
+    <h2>Zmiana koloru tła</h2>
+    <p>
+        <input name="kolorPrzycisku" type="button"
+               value="Zmień kolor tła"
+               onClick="kolor_t()">
+    </p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Obiekty wbudowane JavaScript Przykłady:
+   3.40/75-->
+   <script>
+    tekst = "Obiekty języka JavaScript";
+    dl=tekst.length;
+    document.write(dl+"<br>");
+       // Przykład 3.41/75
+       x = tekst.substring(15,19);
+       document.write(x+"<br>");
+       // Przykład 3.42/76
+       x = tekst.toLowerCase();
+       document.write(x+"<br>");   
+       //Przykład 3.43/76
+       x = tekst.toUpperCase();
+       document.write(x+"<br>");   
+       //Przykład 3.44/76
+       String.prototype.duzaLitera = function(){return this.charAt(0).toUpperCase()+this.substr(1);}
+       //Przykład 3.45/76
+       var tekst='komputer';
+       document.write(tekst.duzaLitera())
+    
+    </script>
+    
+</body>
+</html>

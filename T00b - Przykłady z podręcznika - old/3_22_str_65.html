@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Argumenty Przykład 3.22 str. 65-->
+   
+   <script>
+    function suma_dow()
+       {
+           var i, wynik=0;
+           var liczba_parametrow=arguments.length;
+           for(i=0; i<liczba_parametrow; i++)
+               wynik+=arguments[i];
+           return wynik;
+       }
+       document.write("suma liczb wynosi "+suma_dow(3,5,7)+"<br>");
+       document.write("suma liczb wynosi "+suma_dow(3,5,7,10)+"<br>");
+       
+    </script>
+    
+</body>
+</html>

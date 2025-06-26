@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function lista_arg()
+       {
+           return arguments;
+       }
+       var zmienna = lista_arg();
+       //document.write(zmienna);  -  tak tego nie wyswietlimy
+       zmienna = lista_arg(1,4,5,9,"A","koło");
+    //ile elementów zawiera teraz zmienna?
+       var ile_elementow=zmienna.length;
+    document.write("Zmienna zawiera: "+ile_elementow+" elementów <br>");
+       var tu_zapisze_argumenty="";
+     
+           
+    // Jak pokazać listę argumentów
+    </script>
+    
+</body>
+</html>

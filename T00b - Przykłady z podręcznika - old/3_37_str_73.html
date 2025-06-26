@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Tworzenie obiektów z użyciem konstruktora Przykład 3.37/73-->
+   <script>
+    function klient(nazwisko_k,imie_k,zawod_k)
+       {
+           this.nazwisko=nazwisko_k;
+           this.imie=imie_k;
+           this.zawod=zawod_k;
+           this.wypisz = function()
+           {
+               alert(this.nazwisko + ' '+ this.imie)
+           }
+
+       }
+       
+           // Słowo kluczowe new
+           // Tworzymy nowe obiekty Przykład 3.38/74
+           
+           var osoba_1 = new klient('Kowalski','Jan','kierowca');
+           var osoba_2 = new klient('Nowak','Anna','sekretarka');
+           osoba_1.wypisz();
+           osoba_2.wypisz();
+    </script>
+    
+</body>
+</html>

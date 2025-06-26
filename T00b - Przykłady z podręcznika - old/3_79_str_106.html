@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Walidacja formularzy Przykład 3.79-->
+    <script>
+    function Sprawdz(form)
+        {
+            if(form.nazw.value=='')
+            {
+                alert('Pole nazwisko musi być wypełnione');
+                form.nazw.focus();
+                return false;
+            }
+            
+            if(form.imie.value=='')
+            {
+                alert('Pole imię musi być wypełnine');
+                form.imie.focus();
+                return false;
+            }
+            
+            if(form.zawod.value=='')
+            {
+                alert('Pole zawód musi być wypełnione');
+                form.zawod.focus();
+                return false;
+            }
+            
+            // jeśli wszystko wypełnione
+            
+            return true;
+        }
+    
+    </script>
+    
+    <style>
+    div {
+        width:400px;
+        background-color: aquamarine;
+    }
+    
+    .pole {
+        position: absolute;
+        left: 90px;
+    }
+    body {
+        background-color: #dfdfdf;
+    }
+    </style>
+    
+</head>
+<body>
+   
+   <div>
+       <form enctype="text/plain" action="mailto:nauka@gmail.com" method="post" onsubmit='return Sprawdz(this);'>
+           <h2>Dane osobowe</h2>
+           <h3>Nazwisko: </h3>
+           <input class="pole" name="nazw" value="" size="40" ><br>
+           <h3>Imię: </h3>
+           <input class="pole" name="imie" value="" size="40" ><br> 
+           <h3>Zawód: </h3>          
+           <input class="pole" name="zawod" value="" size="40" ><br>        
+           <label>Pracuję:
+           <input type="checkbox" name="opcje" maxlength="1" >
+           </label> <br><br>
+           <input type="submit" value="Wyślij" >  
+       </form>
+   </div>
+   
+    
+</body>
+</html>

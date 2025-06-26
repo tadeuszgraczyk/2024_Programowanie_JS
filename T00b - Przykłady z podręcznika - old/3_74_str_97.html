@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+       <!--Zdarzenia myszy Przykłady 3.74/97-->
+   <script>
+       function ik2()
+       {
+           document.getElementById('ikona').src="Ikona2.png";
+       }
+       
+       function ik1()
+       {
+           document.getElementById('ikona').src="Ikona1.png";
+       }
+   </script>
+</head>
+<body>
+ <img id="ikona" onmousedown="ik2()" onmouseup="ik1()"  src="Ikona1.png" alt="ikona">
+   <p>Kliknij i przytrzymaj</p>
+    
+</body>
+</html>

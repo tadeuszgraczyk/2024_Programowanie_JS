@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Wyrażenia regularne Przykład 3.81/112-->
+    <script>
+    function Spr_wzorzec()
+        {
+            var form=document.getElementById('in_form'),
+                wzory = {
+                    'nazwisko' : /^[a-zA-Z]{2,}\s+[a-zA-Z]{2,}$/i,
+                    'email' : /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,3}$/i,
+                };
+         for(var pole in wzory)
+         {
+             if(form[pole])
+             {
+                 if(!wzory[pole].test(form[pole].value))
+                 {
+                     alert('Pole '+pole+' ma nieprawidłową wartość');
+                     form[pole].style.background='yellow';
+                     return false;
+                 }
+                 else
+                 {
+                     form[pole].style.background='';
+                 }
+             }
+         }
+            alert('Wszystkie pola wypełniono poprawnie!');
+            return true;
+        }
+    </script>
+    
+    <style>
+    div {
+        width:400px;
+        background-color: #dfF;
+    }
+    
+    .pole {
+        position: absolute;
+        left:130px;
+    }
+    body {
+        background-color: #dfdfdf;
+    }
+    </style>
+</head>
+<body>
+   <div>
+       <form id="in_form" enctype="text/plain" action="mailto:nauka@gmail.com" method="post" onsubmit='return Spr_wzorzec();' >
+           <h2>Dane osobowe</h2>
+           <h3>Imię i nazwisko</h3>
+           <input class="pole" type="text" id="nazwisko" value=""><br>
+           <h3>E-mail</h3>
+           <input class="pole" name="email" id="E-mail" value="" type="text"><br><br>
+           <input type="submit" value="Wyślij" >
+       </form>
+   </div>
+    
+</body>
+</html>

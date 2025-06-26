@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Animowanie grafiki 3.77 str. 103</title>
+</head>
+<body>
+	<p>
+		<img src="Ikona1a.png" alt="" id='ikona'/>
+	</p>
+<!--Animowanie grafiki Przykład 3.77/103-->
+	
+<script type="text/javascript">
+    
+ var ikona_n=new Image();
+ ikona_n.src='Ikona1a.png';
+
+ var ikona_p=new Image();
+ ikona_p.src='Ikona2a.png';
+
+ var obraz=document.getElementById('ikona');
+
+obraz.onmouseover= function()
+{
+	this.src=ikona_p.src;
+}
+obraz.onmouseout=function()
+{
+	this.src=ikona_n.src;
+}
+</script>
+	
+</body>
+</html>

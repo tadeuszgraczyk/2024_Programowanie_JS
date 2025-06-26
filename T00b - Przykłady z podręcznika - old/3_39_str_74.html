@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Właściwość prototype Przykład 3.39/74-->
+   <script>
+       function klient()
+       {
+           this.nazwisko='Bielski';
+           this.imie='Paweł';
+           
+       }
+       klient.prototype.pisz_dane=function ()
+       {
+           document.write(this.nazwisko+' '+this.imie)
+       }
+       klient.prototype.zawod='kierowca';
+       var osoba_1 = new klient();
+       osoba_1.pisz_dane();
+   </script>
+</body>
+</html>

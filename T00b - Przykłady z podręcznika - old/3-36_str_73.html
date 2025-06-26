@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Tworzenie obiektów Przykład 3.36/73-->
+   <script>
+    var obiekt_1 = {
+        nazwisko:'Nowacki',
+        imie:'Piotrek',
+        zawod:'kasjer',
+        pokaz:function ()
+        {
+            document.write(this.nazwisko+' '+this.imie)
+        }
+    }
+    obiekt_1.pokaz();
+       //Do istniejących obiektów można deklarować nowe 
+       //właściwości imetody
+       
+       obiekt_1.wiek=19;
+       obiekt_1.wypisz_wiek = function(){alert('Wiek:'+this.wiek+' lat')}
+       //wywołanie metody
+       obiekt_1.wypisz_wiek();
+    
+    </script>
+    
+</body>
+</html>

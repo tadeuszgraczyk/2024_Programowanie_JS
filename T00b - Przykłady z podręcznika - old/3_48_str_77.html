@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Obiekt date Przykład 3.48/77-->
+   <h2>Wyświetlam bieżącą datę i czas</h2>
+   <script>
+    data_n = new Date();
+    data_l = data_n.toDateString();
+    data_u = data_n.toGMTString();
+    data_r = data_n.toLocaleString();
+    document.write("czas lokalny: "+data_l+"<br>");
+    document.write("czas uniwersalny: "+data_u+"<br>");
+    document.write("czas regionalny: "+data_r+"<br>");
+    </script>
+    
+</body>
+</html>

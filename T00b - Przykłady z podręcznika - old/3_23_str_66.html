@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Okno z alertem 3.23 str.66</title>
+    <!-- Zasięg zmiennych-->
+ <script type="text/javascript">
+    function suma_dow()
+    {
+        var i;
+        // tu nie ma var
+        wynik = 0;
+        var l_param = arguments.length;
+        for(i=0; i<l_param; i++)
+        {
+            wynik+=arguments[i]; //wynik = wynik + arguments[i];
+        }
+        return wynik;
+    }
+    suma_dow(3,5,7,12,1,12);
+     // zmienna wynik jest zmienną globalną i można ją
+     // wykorzystywać w dalszej części skryptu
+    document.write("Suma argumentów: "+wynik);
+</script>
+</head>
+
+<body>
+</body>
+</html>

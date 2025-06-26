@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <!--Przykład 3.70/94-->
+   <form id="form1" action="mailto:nauka@gmail.com" method="post">
+       Imię: <input type="text" name="imie" value="Jan"><br>
+       Nazwisko: <input type="text" name="nazwisko" value="kowalski"><br>
+       <input type="submit" value="Wyślij!">
+   </form>
+   <p>Lista elementów formularza:</p>
+   <script>
+    var x=document.getElementById("form1");
+       for (var i=0; i<x.length;i++)
+       {
+         document.write(x.elements[i].value);
+         document.write("<br>");
+       }
+    </script>
+    
+</body>
+</html>

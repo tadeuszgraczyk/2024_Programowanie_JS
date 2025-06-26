@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Co słychać?</title>
+  <!-- Przykład ze strony 92-->
+</head>
+
+<body>
+<form id="form1" name="form1" action="mailto:nauka@wp.pl" method="post" >
+	Podaj imię: <input type="tekst" name="imie"/>
+
+</form>
+<button onclick="Witaj()">Kliknij!!!</button>
+<script type="text/javascript">
+	function Witaj()
+	{
+		var imie = document.forms['form1'].imie.value;
+		alert('Co słychać' + imie + '?');
+	}
+</script>
+</body>
+</html>
